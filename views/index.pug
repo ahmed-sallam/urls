@@ -1,0 +1,22 @@
+extends layouts/main.pug
+
+block content
+  main.main
+    a(href="/").main__title
+      h1 Free URL Shortener
+    .main__container
+      if error
+        .main__error
+          span  #{error}
+      if success
+        .main__success
+          span  #{success}
+      form.main__form(action="/new" method="POST")
+        img(src="images/link.svg", alt="link", width="22px" height="22px")
+        input.main__form--input(type="text", name="longUrl" placeholder="Enter your URl")
+        input.main__form--submit(type="submit" value="Shorten")
+      if key
+        .main__result
+          img(src="images/go.svg", alt="go", width="22px" height="22px")
+          a.main__result--link(href=`/${key}`, target="_blank", rel="noopener noreferrer")
+            | http://#{host}/#{key}

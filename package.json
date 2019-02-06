@@ -1,0 +1,19 @@
+{
+  "name": "urls",
+  "version": "0.0.1",
+  "description": "Free URL Shortener",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Ahmed Sallam",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.9",
+    "pug": "^2.0.3",
+    "uniqid": "^5.0.3"
+  }
+}
