@@ -1,5 +1,5 @@
-var error = document.querySelector(".main__error");
-var success = document.querySelector(".main__success");
+const error = document.querySelector(".main__error");
+const success = document.querySelector(".main__success");
 function hideElement(element) {
   if (element) {
     setTimeout(function() {
